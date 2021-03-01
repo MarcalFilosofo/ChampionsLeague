@@ -45,10 +45,12 @@ header.header .menu-toggle {
     width: 30px;
 }
 
-h1{
+h1 a{
     font-size: 3rem;
     font-family: 'Shippori Mincho', serif;
     margin: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 nav.nav{
