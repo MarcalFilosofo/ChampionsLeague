@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 100px;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "nav footer footer";
+}
+
+header.header{
+    grid-area: header;
+    
+    background-color:  #05143f;
+}
+
+nav.nav{
+    grid-area: nav;
+    background-image: linear-gradient(to bottom right, #05143f, #263ebc);
+}
+
+main.main{
+    grid-area: main;
+    background-color: #fff;
+}
+
+aside.aside{
+    grid-area: aside;
+    background-color: #dadada;
+}
+
+footer.footer{
+    grid-area: footer;
+    background-color: #05143f;
+}
