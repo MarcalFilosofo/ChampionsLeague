@@ -10,32 +10,52 @@
 </head>
 <body>
 	<header class="header">
-		<nav class="menu-toggle"><img src="" alt="" srcset=""></nav>
-		Últimos campeoes da Champions League
+		<img id="menu-toggle" class="menu-toggle" src="img/list.svg" alt="" srcset="">
+		<h1>
+			Champions League
+		</h1>
 	</header>
 	<nav class="nav">
 		<ul>
 			<li class="nav-item">
-				<a href="bayern.html">
-					Bayern de Munique
+				<a class="main-link" href="bayern.html">
+					<img class="nav-icon" src="img/bayen-munchen.svg" alt="" srcset="">
+					Bayern
 				</a> 
 			</li>
 			<li class="nav-item">
-				<a href="liverpool.html">
+				<a class="main-link" href="liverpool.html">
+					<img class="nav-icon" src="img/liverpool.svg" alt="" srcset="">
 					Liverpool
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="realmadrid.html">
+				<a class="main-link" href="realmadrid.html">
+					<img class="nav-icon" src="img/real-madrid.svg" alt="" srcset="">
 					Real Madrid
 				</a>
 			</li>
 		</ul>
 	</nav>
 	<main class="main">
-		<div class="main-item">Bayern de Munich</div>
-		<div class="main-item">Liverpool</div>
-		<div class="main-item">Real Madrid</div>
+		<a href="bayern.html">
+			<div class="main-item">
+				<img class="main-icon" src="img/bayen-munchen.svg" alt="" srcset="">
+				<h2>Bayern de Munich</h2> 
+			</div>
+		</a>
+		<a href="liverpool.html">
+			<div class="main-item">
+				<img class="main-icon" src="img/liverpool.svg" alt="" srcset="">
+				<h2>Liverpool</h2>
+			</div>
+		</a>
+		<a href="realmadrid.html">
+			<div class="main-item">
+				<img class="main-icon" src="img/real-madrid.svg" alt="" srcset="">
+				<h2>Real Madrid</h2>
+			</div>
+		</a>
 	</main>
 	<aside class="aside">
 		<ul>
@@ -45,5 +65,6 @@
 		</ul>
 	</aside>
 	<footer class="footer">Desenvolvido por Guilherme e Rossano</footer>
+	<script src="js/toggle.js"></script>
 </body>
 </html>

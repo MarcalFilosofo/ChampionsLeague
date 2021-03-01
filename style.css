@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@700&display=swap');
 
 *{
     padding: 0;
@@ -9,36 +10,153 @@
 body{
     height: 100vh;
     display: grid;
-    grid-template-columns: 200px 1fr 100px;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 200px 1fr 130px;
+    grid-template-rows: 100px 1fr 50px;
     grid-template-areas: 
         "header header header"
         "nav main aside"
         "nav footer footer";
 }
 
+body.hide-sidebar{
+    display: grid;
+    grid-template-columns: 1fr 130px;
+    grid-template-rows: 100px 1fr 50px;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+}
+
 header.header{
     grid-area: header;
-    
     background-color:  #05143f;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header.header .menu-toggle {
+    color: white;
+    cursor: pointer;
+    width: 30px;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Shippori Mincho', serif;
+    margin: 10px;
 }
 
 nav.nav{
     grid-area: nav;
-    background-image: linear-gradient(to bottom right, #05143f, #263ebc);
+    background-color: #162e58;
+    padding: 10px;
+}
+
+ul{
+    text-align: none;
+}
+
+ul li{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-icon{
+    width: 30px;
 }
 
 main.main{
     grid-area: main;
     background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.main-item{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    background-color: #dce4e7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.main-icon{
+    height: 130px;
+}
+
+a.main-link{
+    text-decoration: none;
+    color: #fff;
 }
 
 aside.aside{
     grid-area: aside;
     background-color: #dadada;
+    /* padding: 5px; */
+}
+
+body.hide-sidebar nav.nav {
+    display: none;
 }
 
 footer.footer{
     grid-area: footer;
     background-color: #05143f;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right:  20px;
 }
+
+div.linha{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+
+}
+
+.linha{
+    justify-content: center;
+}
+
+.jogador{
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    background-color: #dce4e7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+/* div.zagueiro{
+    width: 50px;
+} */
